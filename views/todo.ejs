@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Todo App</title>
+    </head> 
+       <body>
+            <h1>Hi ToDo App</h1>
+            <div id="form">
+                <form>
+                    <input type="text" name="item" placeholder="Add new item" required>
+                    <button value="submit">Add Items</button>
+                </form>
+            </div>
+            <ul>
+                <% for(var i=0; i< todos.length; i++){ %>
+                <li><%= todos[i].item %></li>
+                <% } %>
+            </ul>
+        </body>
+    
+</html>
